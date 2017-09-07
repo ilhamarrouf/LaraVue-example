@@ -22,7 +22,7 @@ class PostsController extends Controller
         return back();
     }
 
-    public function unFavoritesPost(Post $post)
+    public function unFavoritePost(Post $post)
     {
         Auth::user()->favorites()->detach($post->id);
 
